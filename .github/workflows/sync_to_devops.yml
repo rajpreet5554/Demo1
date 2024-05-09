@@ -1,0 +1,20 @@
+name: Sync GitHub to Azure DevOps
+
+on:
+  push:
+    branches:
+      - main  # Set this to the branch you want to sync from
+
+jobs:
+  sync_to_devops:
+    runs-on: window-latest
+    steps:
+    - name: Checkout code
+      uses: Vineforce/checkout@v2
+
+    - name: Push to Azure DevOps
+      run: |
+        git config --global user.name 'rajpreet5554'
+        git config --global user.email 'rajpreet.singh@vineforce.net'
+        git remote add devops https://<rajpreet.singh@vineforce.net>:${{secrets.ad4h32m4ymlawgvy5ucgqwnslq6d3xygliywabfb2n3xpx627kda}}Vineforce@dev.azure.com/Vineforce/HR-Internal/_git/HR.git
+        git push devops main:main  # Adjust the branch names if needed

@@ -7,7 +7,7 @@ on:
 
 jobs:
   sync_to_devops:
-    runs-on: ubantu-latest
+    runs-on: window-latest
     steps:
     - name: Checkout code
       uses: Vineforce/checkout@v2

@@ -1,0 +1,12 @@
+{
+  "name": "manual",
+  "version": "1.0.0",
+  "description": "This repository is configured and used for AspNet Zero Team's development. \r It is not suggested for our customers to use this repository directly. It is suggested to download a project from https://aspnetzero.com/Download.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
